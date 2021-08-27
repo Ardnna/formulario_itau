@@ -1,74 +1,108 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-  <title>Cadastro de Novos Usuários</title>
-  <link rel="stylesheet" type="text/css" href="arquivoteste.css">
-<h1> Cadastro de Novos Usuários</h1>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Novos Usuários - ITAU</title>
 </head>
 <body>
-<br>
-<br>
-<form action="C:\Users\Andréia\Desktop\GIT\PROJETO GIT\formulario_itau\mensagem_envio.html" method="post">
-  <div id="formulario">
-  <fieldset>
-    <legend>Cadastro Pessoal</legend>
-    <p>
-    <legend>Nome Completo</legend>
-    <p>
-      <input type="text" name="Nome" id="Nome" size="100">
-    <br>
-    <p> 
-    <legend>Email</legend>
-    <p>
-     <input type="email" name="Email" id="Email" value="Email">
-     
-    <legend>CPF</legend>
-    <p>
-      <input type="text" name="CPF" id="CPF" value="CPF">
-    <br>
-    <p> 
-    <legend>Data de Nascimento</legend>
-    <p>
-      <input type="date" name="DN" id="DN" value="DN">
-    <br>
-    <p> 
-    <legend>Endereço</legend>
-    <p>
-      <input type="text" name="endereco" id="endereco" value="endereco">
-    <br>
-    <p> 
-    <legend>Telefone</legend>
-    <p>
-      <input type="text" name="Telefone" id="Telefone" value="Telefone">
-    <br>
-    <p> 
-    <legend>Estado</legend>
-    <p>
-      <input type="text" name="Estado" id="Estado" value="Estado">
-    <br>
-    <p> 
-    <legend>País</legend>
-    <p>
-      <input type="text" name="Pais" id="Pais" value="Pais">
-    <br>
-    <p> 
-    <legend>Gênero</legend>
-    <p>
-      <input type="radio" name="escolha" id="escolha_1" value="Masculino" />
-      <label for="escolha_1">Masculino</label>
-    </p>
-    <p>
-      <input type="radio" name="escolha" id="escolha_2" value="Feminino" />
-      <label for="escolha_2">Feminino</label>
-    </p>
-    <p>
-      <input type="radio" name="escolha" id="escolha_3" value="Outro" />
-      <label for="escolha_3">Outro</label>
-    </p>
-  </fieldset>
+  <div>
+    <h1 id="titulo">Cadastro de Usuários</h1>
+    <p id="subtitulo">Insira abaixo as informações solicitadas</p>
+    <br>      
   </div>
-  <fieldset><input type="submit" value="Enviar"> </fieldset>
-</form>
+
+  <form>
+      <fieldset class="grupo">
+        
+        <div class="campo">
+          <label for="nome"><strong>Nome</strong></label>
+          <input type="text" name="nome" id="nome" required >
+        </div>
+        
+        <div class="campo">
+          <label for="sobrenome"><strong>Sobrenome</strong></label>
+          <input type="text" name="sobrenome" id="sobrenome" required>
+        </div> 
+
+      </fieldset>
+        
+        <div class="campo">
+          <label for="email"><strong>Email</strong></label>
+          <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for=><strong>Qual o seu gênero? </strong></label>
+            <label>
+                <input type="radio" name="genero" value="Masculino">Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="Feminino">Feminino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="outros">Outro
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="estado"><strong>Estado</strong></label>
+            <select id="estado">
+                <option selected disabled value="">Selecione</option>
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>Amazonas</option>
+                <option>Bahia</option>
+                <option>Ceará</option>
+                <option>Espírito Santo</option>
+                <option>Goiás</option>
+                <option>Maranhão</option>
+                <option>Mato Grosso</option>
+                <option>Mato Grosso do Sul</option>
+                <option>Minas Gerais</option>
+                <option>Pará</option>
+                <option>Paraíba</option>
+                <option>Paraná</option>
+                <option>Pernambuco</option>
+                <option>Piauí</option>
+                <option>Rio de Janeiro</option>
+                <option>Rio Grande do Norte</option>
+                <option>Rio Grande do Sul</option>
+                <option>Rondônia</option>
+                <option>Rorâima</option>
+                <option>Santa Cataria</option>
+                <option>São Paulo</option>
+                <option>Sergipe</option>
+                <option>Tocantins</option>
+                <option>Distrito Federal</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="campo">
+              <label><strong>Selecione as tecnologias que utiliza (modelo de chechbox)</strong></label><br><br>
+              <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+              <label for="tecnologia1">HTML</label>              
+              <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+              <label for="tecnologia2">CSS</label>
+
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte um pouco da sua experiência:</strong></label>
+            <textarea row="6" style="widht: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Enviar</button>
+
+
+
+  </form>
+
 
 </body>
 </html>

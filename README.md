@@ -1,12 +1,12 @@
 # Desafio Cadastro Pessoal - Formação Tech
 
 <p style="text-align: center">
- <img alt="Andréia Michaelsen" src="/Imagens/andreia_michaelsen.png" height="100px" />
+ <img alt="Andréia Michaelsen" src="/Imagens/andreia_michaelsen.jpg" height="100px" />
 </p>
 
 <p style="text-align: center">
  <a href="https://linkedin.com/in/andreiamichaelsen">
-  <img alt="Linkedin" src="/Imagens/logo_linkedin.png" height="64px" />
+  <img alt="Linkedin" src="/Imagens/logo_linkedin.png" height="32px" />
  </a>
 </p>
 

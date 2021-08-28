@@ -3,11 +3,12 @@
 <p style="text-align: center">
  <img alt="Andréia Michaelsen" src="/Imagens/andreia_michaelsen.jpg" height="100px" />
 </p>
-
+Andréia Michaelsen
 <p style="text-align: center">
  <a href="https://linkedin.com/in/andreiamichaelsen">
-  <img alt="Linkedin" src="/Imagens/logo_linkedin.png" height="32px" />
+  <img alt="Linkedin" src="/Imagens/logo_linkedin.png" height="28px" />
  </a>
+ Linkedin Andréia Michaelsen
 </p>
 
 - [Desafio Cadastro Pessoal - Atração](#desafio-cadastro-pessoal---atração)

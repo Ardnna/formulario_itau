@@ -4,17 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="Style.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/CSS/Style.css" media="screen">
+
+  <!– Incluso o direcionamento para o arquivo css do formulário –>
+
   <title>Cadastro de Novos Usuários - ITAU</title>
 </head>
 <body>
-  <div class="titulo">
-    <h1 id="titulo">Itaú</h1>
-    <h2 id="subtitulo">Cadastro de Usuários</h2>
-    <p id="orientacao">Insira abaixo as informações solicitadas</p>
-    <br>      
-  </div>
-  <form action="" method="POST" class="formulario">
+ 
+  <form action="" method="POST" class="formulario"> 
+
+    <!– Foi definido metodo "post" e nao get por nao ter limite de envios pela url e reduz a exibição de dados potencialmente sensíveis de um cadastro –>
+
+    <header class="header">
+      <img src="/imagens/logo_itau.png" alt="logo itau" width=60 height=60>
+     <div class="titulo">
+       <h2>Cadastro de Usuários</h2>
+       <p>Insira abaixo as informações solicitadas</p>      
+     </div>
+
+     <!– Header separado com classes distintas para facilitar a formatação em CSS –>
+
+    </header>
       <fieldset class="grupo">
         
         <div class="campo">
@@ -26,6 +37,9 @@
           <label for="CPF"><strong>CPF:</strong><font color="#FF0000">*</font></label>
           <input type="text" name="cpf" id="nome" placeholder="___.___.___-__" maxlength="14" required>
         </div>
+
+        <!– Foi incluso maxlenght em todos os campos, previnindo alguns dos erros do usuário durante a digitação de dados com números específicos de caracteres.
+        Para tanto, foi considerado o usuário que insere caracteres como "." e "-" durante a digitação de números como CPF –>
 
         <div class="campo">
           <label for="RG"><strong>RG:</strong></label>
@@ -67,6 +81,10 @@
         
       <fieldset class="grupo">
         <div class="campo">
+
+          <!– Para o campo Estado foi escolhida a opção select por ser uma informação de baixa variabilidade (nao surgem estados constantemente) e um número 
+          reduzido de federações. –>
+
             <label for="estado"><strong>Estado:</strong></label>
             <select id="estado">
                 <option selected disabled value="">Selecione</option>
@@ -115,16 +133,16 @@
       <div>
         <button class="botao" id="submit" onclick="enviar()" class="enviar_form" >Enviar</button>
       </div>
+
+      <div class="footer">
+        Autor: Andréia Paulina Michaelsen de Mendonça - 2021
+      </div>
       </fieldset>
+      <!– Incluso javascript no documento anexo, onde o html realiza a validação se os campos obrigatorios foram preenchidos e,
+      caso positivo, é exibido um alert personalizado utilizando o nome de quem escreveu a mensagem, informando o envio. –>
 
-      
-
-    
+  
   </form>
   <script src="script.js"></script>
-
 </body>
-<div class="footer">
-  Autor: Andréia Paulina Michaelsen de Mendonça - 2021
- </div>
 </html>

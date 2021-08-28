@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="Style.css" media="screen">
   <title>Cadastro de Novos Usuários - ITAU</title>
 </head>
 <body>
-  <div>
+  <div class="titulo">
     <h1 id="titulo">Itaú</h1>
     <h2 id="subtitulo">Cadastro de Usuários</h2>
     <p id="orientacao">Insira abaixo as informações solicitadas</p>
     <br>      
   </div>
-  <form action="" method="POST">
+  <form action="" method="POST" class="formulario">
       <fieldset class="grupo">
         
         <div class="campo">
@@ -112,10 +112,13 @@
               <input type="radio" name="genero" value="outros">Outro
           </label>
       </div>
+      <div>
+        <button class="botao" id="submit" onclick="enviar()" class="enviar_form" >Enviar</button>
+      </div>
       </fieldset>
 
       
-        <button class="botao" id="submit" onclick="enviar()" class="enviar_form" >Enviar</button>
+
     
   </form>
   <script src="script.js"></script>

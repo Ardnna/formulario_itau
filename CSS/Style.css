@@ -55,7 +55,8 @@ body{
   background: rgba(255, 255, 255, 0.97);
   text-align: left;
   border-radius: 7%;
-}
+  transform: translate(50px);
+ }
 
 input, select, textarea, button{
   border-radius: 5px;
